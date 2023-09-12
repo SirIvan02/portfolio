@@ -19,7 +19,7 @@ app.use(express.json());
 
 app.use(bodyParser.json());
 
-app.post('/send-email', (req, res) => {
+app.post('https://portfolio-frontend-nine-wine.vercel.app/send-email', (req, res) => {
   const { name, email, message } = req.body;
 
   const transporter = nodemailer.createTransport({
