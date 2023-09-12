@@ -24,7 +24,7 @@ const Form = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('https://portfolio-frontend-nine-wine.vercel.app/send-email', {
+      const response = await fetch('https://portfolio-ltcz.vercel.app/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
