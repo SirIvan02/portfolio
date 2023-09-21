@@ -29,6 +29,7 @@ const Form = () => {
         headers: {
           'Content-Type': 'application/json'
         },
+        mode: 'cors',
         body: JSON.stringify(formData)
       });
       if (!response.ok) {
