@@ -17,7 +17,7 @@ const port = process.env.PORT || 5000;
 
 const corsOptions = {
   origin: 'https://portfolio-frontend-hccghjnw3-sirivan02.vercel.app',
-  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+  //optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
 app.use(cors({corsOptions}));
