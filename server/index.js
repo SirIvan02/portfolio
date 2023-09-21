@@ -16,9 +16,8 @@ app.use((req, res, next) => {
 const port = process.env.PORT || 5000;
 
 const corsOptions = {
-  origin: ["https://portfolio-frontend-nine-wine.vercel.app"],
-  methods: ["POST", "GET"],
-  credentials: true
+  origin: 'https://portfolio-frontend-hccghjnw3-sirivan02.vercel.app',
+  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
 app.use(cors({corsOptions}));
