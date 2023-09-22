@@ -19,6 +19,8 @@ app.use(express.json());
 app.use(bodyParser.json());
 
 app.post('/send-email', (req, res) => {
+   res.setHeader('Access-Control-Allow-Origin', '*');
+  
   const { name, email, message } = req.body;
 
   const transporter = nodemailer.createTransport({
