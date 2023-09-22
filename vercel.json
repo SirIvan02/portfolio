@@ -1,7 +1,6 @@
 {
     "rewrites": [
-        {"source":"/(.*)", "destination" : "/"},
-        {"source":"/send-email", "destination" : "/"}
+        {"source":"/(.*)", "destination" : "/"}
     ],
   "headers": [
     {
