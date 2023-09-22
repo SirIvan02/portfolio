@@ -9,7 +9,7 @@ const app = express()
 const port = process.env.PORT || 5000;
 
 const corsOptions = {
-  origin: 'https://portfolio-frontend-nine-wine.vercel.app',
+  origin: '*',
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
