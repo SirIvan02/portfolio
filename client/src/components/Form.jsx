@@ -25,7 +25,7 @@ const Form = () => {
 
     try {
       const response = await fetch('https://portfolio-backend-lovat.vercel.app/send-email', {
-        method: 'GET',
+        method: 'POST',
         headers: {
           'Origin': 'https://www.ivancamassa.com',
           'Content-Type': 'application/json'
