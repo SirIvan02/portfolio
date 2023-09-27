@@ -24,11 +24,14 @@ const Form = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('https://portfolio-backend-lovat.vercel.app', {
+      const response = await fetch('https://portfolio-backend-lovat.vercel.app/send-email', {
         method: 'POST',
         headers: {
           'Origin': 'https://www.ivancamassa.com',
           'Content-Type': 'application/json'
+        },
+        body:{
+            'my-url':"https://www.ivancamassa.com/send-email',
         },
         credentials: 'include',
         mode: 'cors',
