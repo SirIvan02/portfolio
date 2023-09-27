@@ -2,6 +2,18 @@
     "rewrites": [
         {"source":"/(.*)", "destination" : "/"}
     ],
+    "routes": [
+    {
+      "source": "/send-email",
+      "methods": ["POST"],
+      "headers": {
+        "Access-Control-Allow-Origin": "https://www.ivancamassa.com",
+        "Access-Control-Allow-Methods": "POST",
+        "Access-Control-Allow-Headers": "Content-Type"
+      },
+      "destination": "/send-email"
+    }
+  ]
   "headers": [
     {
       "source": "/(.*)",
