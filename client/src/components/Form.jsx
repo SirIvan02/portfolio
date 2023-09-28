@@ -30,10 +30,6 @@ const Form = () => {
           'Origin': 'https://www.ivancamassa.com',
           'Content-Type': 'application/json'
         },
-        body:{
-            'my-url':"https://www.ivancamassa.com/send-email',
-        },
-        credentials: 'include',
         mode: 'cors',
         body: JSON.stringify(formData)
       });
