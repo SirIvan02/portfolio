@@ -27,7 +27,7 @@ const Form = () => {
       const response = await fetch('https://portfolio-backend-lovat.vercel.app/api/send-email', {
         method: 'POST',
         headers: {
-          'Origin': 'https://www.ivancamassa.com',
+          'Origin': 'https://www.ivancamassa.com/',
           'Content-Type': 'application/json'
         },
         mode: 'cors',
@@ -37,7 +37,7 @@ const Form = () => {
         throw new Error("Errore durante l'invio del messaggiooo");
       }
   
-      // Reset the form after successful submission
+      // Resetta il form dopo l'invio
       setFormData({
         name: '',
         email: '',
