@@ -33,7 +33,7 @@ const Form = () => {
           body: JSON.stringify(formData)
       });
       if (!response.ok) {
-        throw new Error("Errore durante l'invio del messaggiooo");
+        throw new Error("Errore durante l'invio del messaggioooo");
       }
   
       // Resetta il form dopo l'invio
