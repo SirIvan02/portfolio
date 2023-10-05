@@ -25,8 +25,10 @@ const Form = () => {
 
     try {
       const response = await fetch('https://portfolio-backend-lovat.vercel.app/api/send-email', {
-        method: 'POST',
-        body: JSON.stringify(formData)
+        method: "POST",
+        headers{
+          "Content-Type": "application/json",
+        },
       });
       if (!response.ok) {
         throw new Error("Errore durante l'invio del messaggiooo");
