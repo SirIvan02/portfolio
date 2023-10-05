@@ -20,8 +20,8 @@ app.post('/api/send-email', (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-      user: 'ivancamassa@gmail.com',
-      pass: 'jcgqmiyxjucftaak',
+      user: process.env.GMAIL_ADDRESS,
+      pass: process.env.GMAIL_PASS,
     },
     tls: {
       rejectUnauthorized: false,
