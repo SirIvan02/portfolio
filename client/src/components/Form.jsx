@@ -26,11 +26,6 @@ const Form = () => {
     try {
       const response = await fetch('https://portfolio-backend-lovat.vercel.app/api/send-email', {
         method: 'POST',
-        headers: {
-          'Origin': 'https://www.ivancamassa.com/',
-          'Content-Type': 'application/json'
-        },
-        mode: 'cors',
         body: JSON.stringify(formData)
       });
       if (!response.ok) {
