@@ -24,7 +24,7 @@ const Form = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('https://portfolio-backend-lovat.vercel.app', {
+      const response = await fetch('https://portfolio-backend-lovat.vercel.app/api/send-email', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
