@@ -30,10 +30,10 @@ const Form = () => {
           "Content-Type": "application/json",
         },
           mode: 'no-cors',
-          body: JSON.stringify(formData)
+          body: JSON.stringify(formData),
       });
       if (!response.ok) {
-        throw new Error("Errore durante l'invio del messaggioooo");
+        throw new Error("Errore durante l'invio del messaggiooo");
       }
   
       // Resetta il form dopo l'invio
