@@ -26,7 +26,7 @@ const Form = () => {
     try {
       const response = await fetch('https://portfolio-backend-lovat.vercel.app/api/send-email', {
         method: "POST",
-        headers{
+        headers: {
           "Content-Type": "application/json",
           },
           mode: 'no-cors',
