@@ -10,14 +10,14 @@ app.use(express.json());
 
 app.use(cors());
 
+app.options('/send-email', cors()); 
+
 app.use(cors({
   origin: 'https://wwww.ivancamassa.com',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionsSuccessStatus: 204,
 }));
-
-app.options('/send-email', cors()); 
 
 app.post('/send-email', (req, res) => {
   const { name, email, message } = req.body;
