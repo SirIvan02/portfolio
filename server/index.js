@@ -15,7 +15,7 @@ app.post('/send-email', (req, res) => {
   app.options('/send-email', cors()); 
 
   app.use(cors({
-    origin: 'https://www.ivancamassa.com/',
+    origin: 'https://www.ivancamassa.com',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
     optionsSuccessStatus: 204,
