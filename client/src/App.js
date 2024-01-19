@@ -1,4 +1,5 @@
 import Homepage from "./components/Homepage";
+import { Analytics } from '@vercel/analytics/react';
 import AboutMe from "./components/AboutMe";
 import Services from "./components/Services";
 import ContactMe from "./components/ContactMe";
@@ -7,6 +8,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
+      <Analytics />
       <Homepage />
       <AboutMe />
       <Services />
