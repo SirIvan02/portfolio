@@ -14,8 +14,8 @@ app.post('/send-email', (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-      user: process.env.GMAIL_ADDRESS,
-      pass: process.env.GMAIL_PASS,
+      user: `ivancamassa@gmail.com`,
+      pass: `jcgqmiyxjucftaak`,
     },
     tls: {
       rejectUnauthorized: false,
@@ -23,8 +23,8 @@ app.post('/send-email', (req, res) => {
   });
 
   const mailOptions = {
-    from: process.env.GMAIL_ADDRESS,
-    to: process.env.GMAIL_ADDRESS,
+    from: 'ivancamassa@gmail.com',
+    to: 'ivancamassa@gmail.com',
     subject: 'Nuovo messaggio di contatto dal sitoweb',
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
   };
