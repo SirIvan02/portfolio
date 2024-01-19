@@ -12,7 +12,7 @@ app.use(cors());
 app.options('/send-email', cors()); 
 
 app.use(cors({
-  origin: 'https://www.ivancamassa.com/',
+  origin: 'http://www.ivancamassa.com/',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionsSuccessStatus: 204,
