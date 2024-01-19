@@ -8,6 +8,8 @@ const app = express()
 
 app.use(express.json());
 
+app.use(cors());
+
 app.post('/send-email', (req, res) => {
   const { name, email, message } = req.body;
 
