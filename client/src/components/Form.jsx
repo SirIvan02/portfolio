@@ -29,7 +29,8 @@ const Form = () => {
         headers: {
           "Content-Type": "application/json",
           },
-          mode: 'no-cors',
+          mode: 'cors',
+          credentials: 'include',
           body: JSON.stringify(formData),
         });
       if (!response.ok) {
