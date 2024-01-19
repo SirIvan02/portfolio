@@ -12,7 +12,7 @@ app.use(cors());
 app.post('/send-email', (req, res) => {
   const { name, email, message } = req.body;
 
-  app.options('*', cors()); 
+  app.options('/send-email', cors()); 
 
   app.use(cors({
     origin: 'https://www.ivancamassa.com',
