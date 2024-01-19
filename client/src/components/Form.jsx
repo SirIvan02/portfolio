@@ -24,6 +24,10 @@ const Form = () => {
     setIsSubmitting(true);
 
     try {
+
+      console.log('Invio della richiesta...', formData);
+
+
       const response = await fetch('https://portfolio-backend-lovat.vercel.app/send-email', {
         method: "POST",
         headers: {
