@@ -23,8 +23,8 @@ app.post('/send-email', (req, res) => {
   });
 
   const mailOptions = {
-    from: 'ivancamassa@gmail.com',
-    to: 'ivancamassa@gmail.com',
+    from: process.env.GMAIL_ADDRESS,
+    to: process.env.GMAIL_ADDRESS,
     subject: 'Nuovo messaggio di contatto dal sitoweb',
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
   };
