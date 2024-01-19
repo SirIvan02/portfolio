@@ -11,16 +11,18 @@ app.use(cors());
 
 app.options('/send-email', cors()); 
 
-app.use(cors({
-  origin: 'https://www.ivancamassa.com/',
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true,
-  optionsSuccessStatus: 204,
-}));
+
 
 app.post('/send-email', (req, res) => {
   const { name, email, message } = req.body;
 
+  app.use(cors({
+    origin: 'https://www.ivancamassa.com/',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true,
+    optionsSuccessStatus: 204,
+  }));
+  
   const transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
