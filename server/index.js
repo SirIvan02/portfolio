@@ -17,6 +17,8 @@ app.use(cors({
   optionsSuccessStatus: 204,
 }));
 
+app.options('/send-email', cors()); 
+
 app.post('/send-email', (req, res) => {
   const { name, email, message } = req.body;
 
