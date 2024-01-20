@@ -31,8 +31,7 @@ const Form = () => {
       const response = await fetch('/send-email', {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
-          "Access-Control-Allow-Origin": "*"
+          "Content-Type": "application/json"
           },
           mode: 'cors',
           credentials: 'include',
