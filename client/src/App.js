@@ -4,10 +4,12 @@ import AboutMe from "./components/AboutMe";
 import Services from "./components/Services";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
   return (
     <div className="App">
+      <SpeedInsights/>
       <Analytics />
       <Homepage />
       <AboutMe />
