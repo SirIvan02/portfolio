@@ -32,6 +32,7 @@ const Form = () => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*"
           },
           mode: 'cors',
           credentials: 'include',
