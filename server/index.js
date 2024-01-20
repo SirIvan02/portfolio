@@ -7,19 +7,16 @@ const app = express()
 
 app.use(express.json());
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://www.ivancamassa.com',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  optionsSuccessStatus: 204,
+}));
+
 
 app.post('/send-email', (req, res) => {
   const { name, email, message } = req.body;
-
-  app.options('/send-email', cors()); 
-
-  app.use(cors({
-    origin: 'https://www.ivancamassa.com',
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true,
-    optionsSuccessStatus: 204,
-  }));
 
   const transporter = nodemailer.createTransport({
     service: 'Gmail',
@@ -49,6 +46,7 @@ app.post('/send-email', (req, res) => {
     }
   });
 });
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
