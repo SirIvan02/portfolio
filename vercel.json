@@ -9,7 +9,7 @@
   "routes": [
     {
       "src": "/send-email",
-      "dest": "/client/src/index.js",
+      "dest": "/server/src/index.js",
       "methods": ["POST"],
       "headers": {
         "Access-Control-Allow-Credentials": "true",
