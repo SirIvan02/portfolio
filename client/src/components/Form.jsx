@@ -28,10 +28,11 @@ const Form = () => {
       console.log('Invio della richiesta...', formData);
 
 
-      const response = await fetch('/send-email', {
+      const response = await fetch(`https://portfolio-backend-lovat.vercel.app/send-email`, {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          Accept: "application/json",
+          "Content-Type": "application/json",
           },
           mode: 'cors',
           credentials: 'include',
